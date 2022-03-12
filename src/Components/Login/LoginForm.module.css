@@ -6,6 +6,7 @@
   display: inline-block;
   color: #666;
   padding: 0.5rem 0;
+  line-height: 1;
 }
 
 .perdeu::after {
@@ -31,7 +32,7 @@
   font-size: 2rem;
 }
 
-.subtile::after {
+.subtitle::after {
   content: '';
   display: block;
   background: #ddd;
