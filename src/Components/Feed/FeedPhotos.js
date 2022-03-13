@@ -22,7 +22,7 @@ const FeedPhotos = ({ setModalPhoto }) => {
   if (loading) return <Loading />;
   if (data)
     return (
-      <ul className={`${styles.feed} animeLeft}`}>
+      <ul className={`${styles.feed} animeLeft`}>
         {data.map((photo) => (
           <FeedPhotosItem
             key={photo.id}
@@ -32,9 +32,7 @@ const FeedPhotos = ({ setModalPhoto }) => {
         ))}
       </ul>
     );
-  else {
-    return null;
-  }
+  else return null;
 };
 
 export default FeedPhotos;

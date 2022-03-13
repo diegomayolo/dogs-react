@@ -5,7 +5,7 @@ const useMedia = (media) => {
 
   React.useEffect(() => {
     function changeMatch() {
-      const { matches } = window.matchMedia('(max-width: 40rem)');
+      const { matches } = window.matchMedia(media);
       setMatch(matches);
     }
     changeMatch();
@@ -13,7 +13,7 @@ const useMedia = (media) => {
     return () => {
       window.removeEventListener('resize', changeMatch);
     };
-  }, [match]);
+  }, [media]);
 
   return match;
 };

@@ -14,18 +14,17 @@ const UserHeader = () => {
         setTitle('Poste Sua Foto');
         break;
       case '/conta/estatisticas':
-        setTitle('Estatisticas');
+        setTitle('Estatísticas');
         break;
       default:
         setTitle('Minha Conta');
-        break;
     }
   }, [location]);
 
   return (
     <header className={styles.header}>
       <h1 className="title">{title}</h1>
-      <UserHeaderNav></UserHeaderNav>
+      <UserHeaderNav />
     </header>
   );
 };

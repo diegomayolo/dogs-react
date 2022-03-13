@@ -1,7 +1,7 @@
 import React from 'react';
+import styles from './PhotoContent.module.css';
 import { Link } from 'react-router-dom';
 import PhotoComments from './PhotoComments';
-import styles from './PhotoContent.module.css';
 
 const PhotoContent = ({ data }) => {
   const { photo, comments } = data;
